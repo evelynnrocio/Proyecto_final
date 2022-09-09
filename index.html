@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Lirium | Pasteleria</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/styles.css"/>
+</head>
+
+
+<body>
+    <header>
+    <nav id="loginBar" class="navbar navbar-expand-lg bg-colorNav sticky-top loginBar" class="botonera" id="botonera">
+        <div class="container-fluid">
+        <a class="navbar-brand" href="index.html">
+            <img src="img/Lirium.png" alt="logotipo" alt="Logotipo" height="70px">
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="buttonham"><i class="fa-thin fa-align-justify"></i></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent"></div>
+        <!-- inicia sesion -->
+        <form class="d-flex">
+            <button id="btnModalLogin" class="btn btn-outline-me-2 toggles" type="button" data-bs-toggle="modal"
+            data-bs-target="#modalLogin">Inicia Sesion</button>
+            <button id="btnLogout" class="btn btn-outline-secondary d-none toggles" type="button">Inicia
+            Sesion</button>
+            <p id="nombreUsuario" class="d-none toggles"></p>
+        </form>
+        <!-- icon de carrito -->
+        <nav class="">
+            <div class="nav__center container">
+            <ul class="nav__list">
+                <div class="carrito__icon">
+                    <img src="https://img.icons8.com/ios-glyphs/30/000000/shopping-cart--v1.png"/>
+                <i class="bx bx-cart"></i>
+                <span class="item__total">0</span>
+                </div>
+            </ul>
+            </div>
+        </nav>
+        </div>
+    </header>
+
+
+    <!--Carrito-->
+    <section class="carrito__overlay">
+    <div class="carrito">
+        <span class="close__carrito">
+        <i class="bx bx-x"></i>
+        </span>
+        <h1>Carrito</h1>
+        <div class="carrito__center">
+        </div>
+        <div class="carrito__footer">
+        <h3>Total: $ <span class="carrito__total">0</span></h3>
+        <button class="clear__carrito btn">Remover Carrito</button>
+        </div>
+    </div>
+    </section>
+
+
+    <!-- inicia sesion -->
+    <main class="container">
+    <section id="guest" class="toggles">
+        <div class="modal " id="modalLogin" tabindex="-2" aria-labelledby="modalLoginLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+            <div class="modal-header">
+                <h3 class="modal-title" id="modalLoginLabel">Ingresá</h3>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+            </div>
+            <div class="modal-body py-2 px-4">
+                <input id="gmail" class="form-control my-4" type="gmail" placeholder="Ingresa tu correo electrónico"
+                required>
+                <input id="contraseña" class="form-control my-4" type="contraseña" placeholder="Ingresa tu contraseña"
+                required>
+            </div>
+            <div class="modal-footer d-block">
+                <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="" id="registro">
+                <label class="form-check-label" for="registro"> Recordarme en este equipo
+                </label>
+                </div>
+                <button class="btn" id="login" type="submit">Ingresar</button>
+                <div class="form-group">
+                <div class="row">
+                    <div class="col-lg-12">
+                    <div class="text-center">
+                        <a href="#">¿Has olvidado tu contraseña?</a>
+                    </div>
+                    </div>
+                </div>
+                </div>
+            </div>
+            </div>
+        </div>
+        </div>
+    </section>
+    </main>
+
+    <h4>Comprá on-line ahora</h4>
+    <h5>Mirá todo lo que podés llevar a tu casa con un solo click – Si querés recibir tu pedido HOY, comunicate a la sucursal más cercana.</h5>
+
+    <!--filtros-->
+    <section class="filter">
+    <div class="grid">
+        <div class="category">
+        <select id="category" onclick="categoryValue()">
+            <option value="">Todos Los Productos</option>
+            <option value="Tortas">Tortas</option>
+            <option value="Tartas">Tartas</option>
+            <option value="Cheesecake">Cheesecake</option>
+        </select>
+        </div>
+    </div>
+    </section>
+
+    <!--Productos-->
+    <section class="productos">
+    <div class="productos__center">
+    </div>
+    </section>
+
+    <div class="anuncio">
+        <img src="img/anuncio1.jpg" alt="anuncio">
+    </div>
+
+    <footer class="footer" id="pie">
+    <div>
+        <article>
+        <img src="img/Lirium.png" alt="icono" height="10%">
+        <div class="copy">
+            Copyright 2022
+        </div>
+    </footer>
+
+    <script src="./js/script.js"></script>
+</body>
+
+</html>

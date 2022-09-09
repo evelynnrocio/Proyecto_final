@@ -1,0 +1,48 @@
+{
+    "status": "success",
+    "items": [{
+            "id": 1,
+            "title": "Torta 'Butterfly'",
+            "price": 3000,
+            "image": "img/Torta1.jpeg",
+            "category": "Tortas"
+        },
+        {
+            "id": 2,
+            "title":"Cheesecake de Oreo",
+            "price": 2000,
+            "image": "img/Cheesecake1.jpeg",
+            "category": "Cheesecake"
+        },
+        {
+            "id": 3,
+            "title": "Torta de Frutos Rojos",
+            "price": 3500,
+            "image": "img/Torta2.jpeg",
+            "category": "Tortas"
+        },
+        {
+            "id": 4,
+            "title": "Tarta de Cerezas",
+            "price": 2500,
+            "image":  "img/Tarta.jpeg",
+            "category": "Tartas"
+        },
+        {
+            "id": 5,
+            "title": "Cheesecake de Dulce de Leche y Nutella",
+            "price": 4000,
+            "image": "img/Cheesecake2.jpeg",
+            "category": "Cheesecake"
+
+        },
+        {
+            "id": 6,
+            "title": "Tarta de Limon",
+            "price": 2500,
+            "image": "img/Tarta2.jpeg",
+            "category": "Tartas"
+
+        }
+    ]
+}
